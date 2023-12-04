@@ -70,4 +70,16 @@ describe("Application", () => {
     const paraElement = screen.getByText("All fields are required", {
       selector: "p",
   });
+    expect(paraElement).toBeInTheDocument();
+
+    // ! This below is getByDisplayValue  method
+    const displayValueElement = screen.getByDisplayValue("true");
+    expect(displayValueElement).toBeInTheDocument();
+  });
+
+  // ! This below is getByAltText method
+  const imageElement = screen.getByAltText("This is an image");
+  expect(imageElement).toBeInTheDocument();
+
+  // ! This below is getByTitle method
 });

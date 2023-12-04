@@ -7,8 +7,8 @@ const Application = () => {
       <h2>This is section 1</h2>
       <form action="">
         <div>
-          <label htmlFor="Name">Name</label>
-          <input type="text" id="Name" />
+          <label htmlFor="Name">Bio</label>
+          <input type="text" id="Name" placeholder="Form"/>
         </div>
         <div>
           <label htmlFor="bio">Bio</label>

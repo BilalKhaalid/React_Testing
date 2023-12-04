@@ -65,5 +65,9 @@ describe("Application", () => {
     // ! This below is getByPlaceholder method
     const PlaceHolderElement = screen.getByPlaceholderText("Form");
     expect(PlaceHolderElement).toBeInTheDocument();
+
+    // ! This below is getByText method which also have selector option
+    const paraElement = screen.getByText("All fields are required", {
+      selector: "p",
   });
 });

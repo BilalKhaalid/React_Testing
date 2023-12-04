@@ -75,13 +75,12 @@ describe("Application", () => {
     // ! This below is getByDisplayValue  method
     const displayValueElement = screen.getByDisplayValue("true");
     expect(displayValueElement).toBeInTheDocument();
+    // ! This below is getByAltText method
+    const imageElement = screen.getByAltText("This is an image");
+    expect(imageElement).toBeInTheDocument();
+
+    // ! This below is getByTitle method
+    const titleElement = screen.getByTitle("close");
+    expect(titleElement).toBeInTheDocument();
   });
-
-  // ! This below is getByAltText method
-  const imageElement = screen.getByAltText("This is an image");
-  expect(imageElement).toBeInTheDocument();
-
-  // ! This below is getByTitle method
-  const titleElement = screen.getByTitle("close");
-  expect(titleElement).toBeInTheDocument();
 });

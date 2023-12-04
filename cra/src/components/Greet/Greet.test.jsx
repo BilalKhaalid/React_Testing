@@ -52,3 +52,31 @@ describe("nested", () => {
     expect(textElement).toBeInTheDocument();
   });
 });
+
+// * JEST will look for files that have .test.js/jsx/ts/jsx suffix and it will also look for files that have spec.js/jsx/ts/tsx files suffix it will also look for files that are under __test__ / test folder names
+
+// * We can also use it global keyword instead of test and the test will work in older code bases we can find it keyword for testing if we want to run a particular test we can use fit keyword and if we want a test to be skip temporarily we can use xit keyword as follows
+
+// describe("nested", () => {
+//   // ! Test with it keyword
+//   it("greet render with a name", () => {
+//     render(<Greet name="Bilal" />);
+//     const textElement = screen.getByText("Hello Bilal");
+//     expect(textElement).toBeInTheDocument();
+//   });
+
+//   // ! Test with fit keyword
+//   fit("greet render with a name", () => {
+//     render(<Greet name="Bilal" />);
+//     const textElement = screen.getByText("Hello Bilal");
+//     expect(textElement).toBeInTheDocument();
+//   });
+
+//   // ! Test with xit keyword
+//   xit("greet render with a name", () => {
+//     render(<Greet name="Bilal" />);
+//     const textElement = screen.getByText("Hello Bilal");
+//     expect(textElement).toBeInTheDocument();
+//   });
+
+// });

@@ -7,7 +7,7 @@ const Application = () => {
       <h2>This is section 1</h2>
       <p>All fields are required</p>
       <span title="close">X</span>
-      <p data-testId="custom-element">This is a paragraph</p>
+      <div data-testid="custom-element">This is a paragraphs</div>
       <form action="">
         <div>
           <label htmlFor="Name">Bio</label>

@@ -82,5 +82,9 @@ describe("Application", () => {
     // ! This below is getByTitle method
     const titleElement = screen.getByTitle("close");
     expect(titleElement).toBeInTheDocument();
+
+    // ! This below is getByTestId method
+    const testIdElement = screen.getByTestId("custom-element");
+    expect(testIdElement).toBeInTheDocument();
   });
 });

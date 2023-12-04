@@ -5,10 +5,18 @@ const Application = () => {
     <div>
       <h1>This is heading</h1>
       <h2>This is section 1</h2>
+      <p>All fields are required</p>
+      <span title="close">X</span>
       <form action="">
         <div>
           <label htmlFor="Name">Bio</label>
-          <input type="text" id="Name" placeholder="Form"/>
+          <input
+            type="text"
+            id="Name"
+            placeholder="Form"
+            value={true}
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
@@ -33,6 +41,7 @@ const Application = () => {
         <div>
           <button>Submit</button>
         </div>
+        <img src="" alt="This is an image" />
       </form>
     </div>
   );

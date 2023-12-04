@@ -69,7 +69,7 @@ describe("Application", () => {
     // ! This below is getByText method which also have selector option
     const paraElement = screen.getByText("All fields are required", {
       selector: "p",
-  });
+    });
     expect(paraElement).toBeInTheDocument();
 
     // ! This below is getByDisplayValue  method
@@ -82,4 +82,6 @@ describe("Application", () => {
   expect(imageElement).toBeInTheDocument();
 
   // ! This below is getByTitle method
+  const titleElement = screen.getByTitle("close");
+  expect(titleElement).toBeInTheDocument();
 });

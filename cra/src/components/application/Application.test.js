@@ -67,10 +67,10 @@ describe("Application", () => {
     expect(PlaceHolderElement).toBeInTheDocument();
 
     // ! This below is getByText method which also have selector option
-    const paraElement = screen.getByText("All fields are required", {
-      selector: "p",
-    });
-    expect(paraElement).toBeInTheDocument();
+    // const paraElement = screen.getByText("All fields are required", {
+    //   selector: "p",
+    // });
+    // expect(paraElement).toBeInTheDocument();
 
     // ! This below is getByDisplayValue  method
     const displayValueElement = screen.getByDisplayValue("true");
@@ -86,5 +86,16 @@ describe("Application", () => {
     // ! This below is getByTestId method
     const testIdElement = screen.getByTestId("custom-element");
     expect(testIdElement).toBeInTheDocument();
+
+    // ! TextMatch below
+    // ? Exact Match
+    // const paraElement = screen.getByText("All fields are required");
+    // ? substring match
+    // const paraElement = screen.getByText("fields ", { exact: false });
+    // ? Functional Match
+    const paraElement = screen.getByText((content) =>
+      content.startsWith("All")
+    );
+    expect(paraElement).toBeInTheDocument();
   });
 });

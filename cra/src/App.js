@@ -8,7 +8,8 @@ const App = () => {
   return (
     <div>
       {/* <Application /> */}
-      <Skills skills={skills} />
+      {/* <Skills skills={skills} /> */}
+      <counter />
     </div>
   );
 };

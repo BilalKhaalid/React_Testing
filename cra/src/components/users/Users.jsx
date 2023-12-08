@@ -1,8 +1,8 @@
 import React from "react";
 
-const users = () => {
+const Users = () => {
   const [users, setUsers] = React.useState([]);
-  const [error, setError] = useState(null);
+  const [error, setError] = React.useState(null);
   React.useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
@@ -22,4 +22,4 @@ const users = () => {
   );
 };
 
-export default users;
+export default Users;

@@ -1,5 +1,6 @@
 import React from "react";
 import Counter2 from "./components/counter2/Counter2";
+import Users from "./components/users/Users";
 // import MuiMode from "./components/mui-mode/MuiMode";
 // import Providers from "./components/providers/App-Providers";
 // import Counter from "./components/counter/Counter";
@@ -17,7 +18,8 @@ const App = () => {
       {/* <Providers>
         <MuiMode />
       </Providers> */}
-      <Counter2 count={0} />
+      {/* <Counter2 count={0} /> */}
+      <Users />
     </div>
   );
 };

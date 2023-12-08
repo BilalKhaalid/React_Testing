@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react";
+import { act, render, renderHook } from "@testing-library/react";
 import useCounter from "../hooks/useCounter";
 describe("useCounter", () => {
   test("should renders initial value of 0", () => {

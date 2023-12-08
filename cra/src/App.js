@@ -1,5 +1,7 @@
 import React from "react";
-import Counter from "./components/counter/Counter";
+import MuiMode from "./components/mui-mode/MuiMode";
+import Providers from "./components/providers/App-Providers";
+// import Counter from "./components/counter/Counter";
 // import Application from "./components/application/Application";
 // import Skills from "./components/skills/Skills.jsx";
 
@@ -10,7 +12,10 @@ const App = () => {
     <div>
       {/* <Application /> */}
       {/* <Skills skills={skills} /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Providers>
+        <MuiMode />
+      </Providers>
     </div>
   );
 };
